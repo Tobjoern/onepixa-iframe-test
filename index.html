@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="sidebar"></div>
+      <iframe src="https://app.onepixa.com/" class="main-view"></iframe>
+    </div>
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        height: 100%;
+      }
+
+      .body {
+        display: flex;
+        height: 100%;
+      }
+
+      .sidebar {
+        width: 250px;
+        background-color: red;
+      }
+
+      .main-view {
+        background-color: green;
+        position: relative;
+        flex: 1;
+      }
+    </style>
+  </body>
+</html>
